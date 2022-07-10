@@ -1,0 +1,64 @@
+mod.web_layout.BackendLayouts {
+  Homepage {
+    title = Homepage
+    icon = EXT:example_extension/Resources/Public/Images/BackendLayouts/default.gif
+    config {
+      backend_layout {
+        colCount = 3
+        rowCount = 4
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Kopfzeile
+                colspan = 3
+                colPos = 10
+              }
+            }
+          }
+          2 {
+            columns {
+              1 {
+                name = Inhalt 1.1
+                colPos = 100
+              }
+              2 {
+                name = Inhalt 1.2
+                colPos = 110
+              }
+              3 {
+                name = Inhalt 1.3
+                colPos = 120
+              }
+            }
+          }
+          3 {
+            columns {
+              1 {
+                name = Inhalt 2.1
+                colspan = 3
+                colPos = 200
+              }
+            }
+          }
+          4 {
+            columns {
+              1 {
+                name = Fußzeile 1.1
+                colPos = 1000
+              }
+              2 {
+                name = Fußzeile 1.2
+                colPos = 1100
+              }
+              3 {
+                name = Fußzeile 1.3
+                colPos = 1200
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

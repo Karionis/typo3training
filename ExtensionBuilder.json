@@ -1,0 +1,42 @@
+{
+    "modules": [],
+    "properties": {
+        "backendModules": [],
+        "description": "Exercise for creating a site package extension.",
+        "emConf": {
+            "category": "templates",
+            "custom_category": "",
+            "dependsOn": "typo3 => 10.4.0-10.4.99\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "generateDocumentationTemplate": true,
+            "generateEditorConfig": true,
+            "generateEmptyGitRepository": true,
+            "sourceLanguage": "en",
+            "state": "alpha",
+            "targetVersion": "10.4.0-10.4.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "typo3training",
+        "name": "TYPO3Training",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "",
+                "email": "niklas.kanthak@online.de",
+                "name": "Niklas Kanthak",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [],
+        "vendorName": "NiklasKanthak"
+    },
+    "wires": [],
+    "storagePath": "C:\/xampp\/htdocs\/typo3\/typo3conf\/ext\/",
+    "log": {
+        "last_modified": "2022-07-10 13:32",
+        "extension_builder_version": "10.0.3",
+        "be_user": " (1)"
+    }
+}

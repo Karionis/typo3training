@@ -1,0 +1,9 @@
+config {
+	# zuerst Seitentitel, dann Sitename mit Bindestrich anfügen
+	pageTitleFirst = 1
+	pageTitleSeparator = -
+	pageTitleSeparator.noTrimWrap = | | |
+
+	// ausführliche Fehlermeldungen
+	contentObjectExceptionHandler = 0
+}

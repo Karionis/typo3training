@@ -1,0 +1,7 @@
+<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+	<f:for each="{submenue}" as="submenueitem">
+		<li>
+			<f:link.page pageUid="{submenueitem.data.uid}" class="dropdown-item{f:if(condition:submenueitem.active, then:' active')}">{submenueitem.title}</f:link.page>
+		</li>
+	</f:for>
+</ul>

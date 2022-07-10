@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container">
+		<a class="navbar-brand" href="#">Navbar</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<f:for each="{menue}" as="menueitem">
+					<f:if condition="{menueitem.children}">
+						<f:then>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle{f:if(condition:menueitem.active, then:' active')}" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">{menueitem.title}</a>
+									<f:render partial="Submenue" arguments="{submenue: menueitem.children}" />
+								</li>
+							</f:then>
+							<f:else>
+								<li class="nav-item">
+									<f:link.page pageUid="{menueitem.data.uid}" class="nav-link{f:if(condition:menueitem.active, then:' active')}" additionalAttributes="{aria-current: '{f:if(condition:menueitem.current, then:\'page\')}'}">{menueitem.title}</f:link.page>
+									<f:comment>
+										<f:debug title="" inline="1">{menueitem}</f:debug>
+									</f:comment>
+								</li>
+							</f:else>
+						</f:if>
+					</li>
+				</f:for>
+			</ul>
+			<form class="d-flex">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+		</div>
+	</div>
+</nav>
