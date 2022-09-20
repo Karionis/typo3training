@@ -1,0 +1,23 @@
+lib.contentElement {
+	templateRootPaths {
+		10 = EXT:typo3training/Resources/Private/Templates/ContentElements/
+	}
+	partialRootPaths {
+		10 = EXT:typo3training/Resources/Private/Partials/ContentElements/
+	}
+	layoutRootPaths {
+		10 = EXT:typo3training/Resources/Private/Layouts/ContentElements/
+	}
+}
+
+tt_content.bookquote =< lib.contentElement
+tt_content.bookquote {
+	templateName = Bookquote
+	dataProcessing {
+		10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+		10 {
+			references.fieldName = assets
+			as = assets
+		}
+	}
+}
