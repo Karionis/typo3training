@@ -10,8 +10,8 @@
     ],
     "license": "GPL-2.0-or-later",
     "require": {
-        "georgringer/news": "^9.4",
-        "typo3/cms-core": "^10.4"
+        "georgringer/news": "^9.4 || ^10",
+        "typo3/cms-core": "^10.4 || ^11"
     },
     "require-dev": {
         "typo3/testing-framework": "^6.8"
