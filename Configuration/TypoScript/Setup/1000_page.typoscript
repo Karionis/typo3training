@@ -19,6 +19,14 @@ page {
 		bootstrap.disableCompression = 1
 		bootstrap.defer = 1
 	}
+
+	includeJSFooterlibs.jquery = EXT:typo3training/Resources/Public/js/jquery-3.6.1.min.js
+	includeJSFooterlibs.jquery.disableCompression = 1
+
+	cssInline.2345 = TEXT
+	cssInline.2345.value = .focuspoint { width: 20vw; height: 20vh; }
+	cssInline.2346 = TEXT
+	cssInline.2346.value = #pageBackground { z-index: -1000; }
 }
 
 page.10 = FLUIDTEMPLATE

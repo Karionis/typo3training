@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" date="2018-03-29T11:02:12Z" product-name="lang">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+		<trans-unit id="crop_variants.default" xml:space="preserve" translate="no">
+			<source>Standard-Test</source>
+		</trans-unit>
+		<trans-unit id="imageManipulation.mobile" xml:space="preserve" translate="no">
+			<source>Mobile</source>
+		</trans-unit>
+		<trans-unit id="imageManipulation.desktop" xml:space="preserve" translate="no">
+			<source>Desktop</source>
+		</trans-unit>
+		<trans-unit id="cropvariantsbuilder.1.91" xml:space="preserve" translate="no">
+			<source>This is the new title for an existing aspectRatio within EXT:cropvariantsbuilder</source>
+		</trans-unit>
+		</body>
+	</file>
+</xliff>

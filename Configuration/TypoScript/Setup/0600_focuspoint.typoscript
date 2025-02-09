@@ -1,0 +1,13 @@
+@import 'EXT:focuspoint/Configuration/TypoScript/setup'
+
+lib.contentElement {
+	templateRootPaths {
+		10 = EXT:typo3training/Resources/Private/Templates/ContentElements/
+	}
+	partialRootPaths {
+		10 = EXT:typo3training/Resources/Private/Partials/ContentElements/
+	}
+	layoutRootPaths {
+		10 = EXT:typo3training/Resources/Private/Layouts/ContentElements/
+	}
+}

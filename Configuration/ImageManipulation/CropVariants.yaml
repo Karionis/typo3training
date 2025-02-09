@@ -1,0 +1,22 @@
+imageManipulation:
+  cropVariants:
+    defaults:
+      aspectRatios:
+        "1.91:1":
+          title: "LLL:EXT:typo3training/Resources/Private/Language/locallang.xlf:cropvariantsbuilder.1.91"
+        "123:321":
+          title: "Completely new introduced aspect ratio"
+          value: 123 / 321
+
+      defaultCropVariantsConfiguration:
+        default:
+          aspectRatios:
+            - "1.91:1"
+            - "3:2"
+            - "2:3"
+            - "123:321"
+            - "NaN"
+
+imports:
+  -
+    resource: 'EXT:cropvariantsbuilder/Configuration/ImageManipulation/CropVariants.yaml'

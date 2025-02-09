@@ -1,0 +1,30 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+
+<f:comment>class="focuspoint" data-image-h="{fp:h}" data-image-w="{fp:w}" data-focus-y="{fp:y}" data-focus-x="{fp:x}"</f:comment>
+
+  <f:comment>
+    <f:debug title="" inline="1">{file.properties.focus_point_y}</f:debug>
+  </f:comment>
+
+<f:comment>
+  <f:media class="image-embed-item" file="{file}" width="{dimensions.width}" height="{dimensions.height}" alt="{file.alternative}" title="{file.title}" loading="{settings.media.lazyLoading}" />
+</f:comment>
+
+<f:comment>
+  <div style="height: 400px;">
+</f:comment>
+
+        <fp:image image="{file}" realCrop="false"/>
+
+        <f:comment>
+          <fp:image image="{file}" width="1000c" height="400c" realCrop="false"/>
+        </f:comment>
+    
+      <f:comment>
+        <fp:image src="{file.uid}" treatIdAsReference="1" width="1000c" height="400c" realCrop="false"/>
+      </f:comment>
+
+<f:comment>
+  </div>
+</f:comment>
+</html>
